@@ -1,0 +1,45 @@
+# 🏛️ NeuroCOBOL Neuro-OS .gitignore
+# José Manuel Moreno Cano — Genesis OS (2026)
+
+# == Ejecutables y Binarios ==
+*.exe
+*.o
+*.obj
+*.gxp
+*.bin
+*.out
+*.dll
+*.lib
+
+# == Archivos de Sistema Windows ==
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# == Entornos de Desarrollo (IDE) ==
+.vscode/
+.vs/
+*.user
+*.userosscache
+*.sln
+*.vcxproj
+*.suo
+
+# == Temporales y Logs ==
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+
+# == Artefactos de IA y NeuroBUS ==
+*.neural_dump
+bus_signals.trace
+hemisphere_dump.json
+
+# == Otros ==
+.DS_Store
+node_modules/
+dist/
+build/
