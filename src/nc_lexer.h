@@ -25,6 +25,8 @@ typedef enum {
     TOK_END_IF,     // FIN_SI / END_IF
     TOK_WINDOW,     // VENTANA / WINDOW
     TOK_BUTTON,     // BOTON / BUTTON
+    TOK_END_WINDOW, // FIN_VENTANA / END_WINDOW
+    TOK_END_BUTTON, // FIN_BOTON / END_BUTTON
     TOK_FIELD,      // CAMPO / FIELD
     TOK_ON,         // AL / ON
     TOK_CLICK,      // CLIC / CLICK

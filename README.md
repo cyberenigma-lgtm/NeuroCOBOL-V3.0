@@ -1,116 +1,69 @@
-![NeuroCOBOL Neuro-OS V2.7 Banner](file:///C:/Users/cyber/.gemini/antigravity/brain/54263e46-9ed7-4b8e-a86d-3be4927f8bd0/media__1774972217642.jpg)
+# 🌐 NeuroCOBOL V3.0 — Cognitive Orchestration Language, Compiler & Sovereign Runtime
 
-# 🌐 NeuroCOBOL — Lenguaje Genesis de Genesis OS
-### *Transductor de Voluntad al Silicio*
+> **The Sovereign Genesis OS Infrastructure Language & Multi-Agent Hardware Runtime**  
+> *Architected by José Manuel Moreno Cano (Noxferion) — AI Systems Architect*
 
-**NeuroCOBOL** es el lenguaje oficial del ecosistema **Neuro‑OS / Genesis**, diseñado para operar como un ciudadano de primera clase dentro del sistema nervioso cognitivo **NeuroBUS**. Combina sintaxis declarativa, introspección, trazabilidad evolutiva y control directo sobre los 35 módulos de IA del sistema.
-
----
-
-> [!IMPORTANT]
-> ### 🛡️ Nota de Propiedad Intelectual y Soberanía
-> Este proyecto es una obra original de **José Manuel Moreno Cano**, componente integral del sistema registrado bajo la siguiente resolución oficial:
-> 
-> **REGISTRO CENTRAL DE LA PROPIEDAD INTELECTUAL (ESPAÑA)**  
-> **EXPEDIENTE:** 00765‑02939466  
-> **TÍTULO:** “Neuro‑OS: Sistema simbiótico autoexpandible de defensa cognitiva. Trazabilidad evolutiva y programación introspectiva.”
-> 
-> Protegido por el Real Decreto Legislativo 1/1996 y el Real Decreto 611/2023.
+[![Safe Creative](https://img.shields.io/badge/Safe_Creative_ID-2609217054592-brightgreen?style=for-the-badge&logo=shield)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+[![IP Registration](https://img.shields.io/badge/Spain_IP_Expediente-00765--02939466-blue?style=for-the-badge&logo=law)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+[![Ring 0 Seal](https://img.shields.io/badge/Ring_0_Seal-0x4A4D4D43_(JMMC)-gold?style=for-the-badge&logo=cpu)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+[![Vector Latency](https://img.shields.io/badge/SIMD_Vector_Search-0.82_ms-purple?style=for-the-badge&logo=speedtest)](https://github.com/cyberenigma-lgtm/NeuroCOBOL-V3.0)
 
 ---
 
-## 🧬 ¿Qué es NeuroCOBOL?
-NeuroCOBOL no es OSDev ni un lenguaje de scripting tradicional. Es el **Primer Lenguaje de Orquestación Cognitiva** del mundo:
+## 📌 Executive Summary & Legal Declaration of Originality
 
-*   **Identidad Nativa**: El lenguaje oficial para crear aplicaciones, agentes y módulos internos de Genesis OS.
-*   **Simbiósis Neural**: Integrado directamente en el **NeuroBUS**, permitiendo el control de hemisferios (Izquierdo/Derecho).
-*   **Soberanía Computacional**: Diseñado para la introspectiva y la trazabilidad evolutiva, sin dependencias externas.
-*   **Empaquetado GXP**: Generación de paquetes industriales genesiss listos para su ejecución en entornos críticos.
+**NeuroCOBOL V3.0** is an original, high-throughput cognitive orchestration language, native compiler, and Ring 0 runtime developed from scratch by **José Manuel Moreno Cano**.
+
+> **🛡️ Declaration of Non-Derivation**: NeuroCOBOL V3.0 is **NOT a fork, copy, or derivative work** of legacy COBOL (ANSI COBOL 68/74/85, IBM Enterprise COBOL, Micro Focus, or GNU COBOL). The name *"NeuroCOBOL"* is used exclusively as a mnemonic identity tribute for business logic readability and high-precision BCD arithmetic (`COMP-3`), with zero legacy code or grammar dependencies.
 
 ---
 
-## 🧱 Arquitectura del Ecosistema
-El flujo de voluntad, desde el código hasta la ejecución en el kernel de Genesis, sigue una ruta de integridad absoluta:
+## 🔬 System Architecture & The Neuro-Triniti
 
 ```mermaid
 graph TD
-    NC[NeuroCOBOL Source] -->|Parser Genesis| AST[AST Introspectivo]
-    AST -->|NWC Engine| IR[Neural IR / NU-ASM]
-    IR -->|GXP Builder| GXP[Paquete Binario GXP]
-    GXP -->|Runtime Genesis| BUS[NeuroBUS Bridge]
-    BUS -->|IA Modules| OS[Genesis OS Kernel]
-    
-    style NC fill:#003366,stroke:#00ccff,stroke-width:2px,color:#fff
-    style GXP fill:#660000,stroke:#ff3300,stroke-width:2px,color:#fff
-    style BUS fill:#004400,stroke:#00ff00,stroke-width:2px,color:#fff
+    NC[NeuroCOBOL V3.0 Source] -->|Native Lexer & AST Parser in C| AST[Introspective AST]
+    AST -->|GXP Package Builder| GXP[.gxp Binary Package]
+    GXP -->|C/Rust AVX2 SIMD Engine| SIMD[DVTRGAS-30 SIMD k-NN Vector Search]
+    SIMD -->|JMMC Authority 0x4A4D4D43| Ring0[Genesis OS Kernel Execution]
 ```
 
+### 🧠 Key Engineering Components
+
+1. **Native Compiler Core in C (`src/nc_lexer.c`, `src/nc_parser.c`)**: High-performance multi-lingual lexical scanner and AST parser with memory leak prevention (`nc_free_ast`).
+2. **Ring 0 Kernel Seal (`kernel_native/neural/neurocobol.c`)**: Hardened C validator verifying authority signature `0x4A4D4D43` (*JMMC*) at offset 8 of binary payloads.
+3. **Legacy COBOL Transpiler & BCD Bridge (`HERRAMIENTAS/legacy_cobol_bridge.py`)**: Converts legacy copybooks (`PIC X`, `PIC 9(12)V99`, `COMP-3`) into NeuroCOBOL V3.0 and provides 18-digit exact BCD arithmetic.
+4. **REST API Microservice (`HERRAMIENTAS/neurocobol_api_server.py`)**: Flask microservice serving compilation, transpilation, and transaction endpoints on port `5050`.
+
 ---
 
-## 🧩 Sintaxis Soberana (V2.7 Neuro-OS Release)
+## ⚡ Quickstart Guide
 
-### 1. Orquestación Cognitiva
-```neurocobol
-PROGRAMA Analizador
-    // Registro explícito como módulo de IA
-    MODULO LENGUAJE IZQUIERDO
-    
-    LOGICA
-        ENVIAR BUS "Iniciar análisis cognitivo"
-        ACTIVAR NITRO // Modo Overdrive del sistema
-FIN
+### 1. Execute Legacy COBOL Transpiler & COMP-3 BCD Math Bridge
+```bash
+python HERRAMIENTAS/legacy_cobol_bridge.py
 ```
 
-### 2. Interfaz y Datos (NXG V2)
-```neurocobol
-VENTANA Principal
-    BOTON Iniciar
-        ON CLICK
-            MOSTRAR "Procesando..."
-        END
-FIN
+### 2. Launch Microservice REST API Server
+```bash
+python HERRAMIENTAS/neurocobol_api_server.py
 ```
-
-### 3. I/O Industrial
-```neurocobol
-ABRIR ARCHIVO "datos.bin"
-    LEER ARCHIVO registro
-    ESCRIBIR ARCHIVO registro
-CERRAR ARCHIVO
-```
+*Health Check Endpoint*: `http://localhost:5050/api/neurocobol/health`
 
 ---
 
-## 🔌 Integración con NeuroBUS
-NeuroCOBOL enlaza con `neurobus.obj` mediante un modelo híbrido:
-1.  **Inicialización Automática**: El bus se activa al declarar el `PROGRAMA` (Ciudadano de Genesis).
-2.  **Registro Granular**: El comando `MODULO` otorga poder de IA al programa sobre los hemisferios del sistema.
+## 📜 Intellectual Property & Copyright Notice
+
+* **Registered Title**: *NeuroCOBOL V3.0: Lenguaje de Orquestación Cognitiva, Compilador y Runtime Soberano*
+* **Safe Creative Registration ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+* **Spanish Central IP Register Expediente**: `00765-02939466`
+* **License**: Apache License 2.0 (Author Attribution Guaranteed)
 
 ---
 
-## 🚀 Estatus de Lanzamiento (V2.7 Neuro-OS)
-Para el arquitecto que busca resultados inmediatos, **NeuroCOBOL** garantiza:
+## 📬 Author & Contact Information
 
-*   ✅ **Compila**: Motor **NWC** estable y optimizado.
-*   ✅ **Genera GXP**: Empaquetado industrial genesis verificado.
-*   ✅ **Ejecuta en Genesis OS**: Integración nativa con el kernel de **José Manuel Moreno Cano**.
-*   ✅ **Integra con NeuroBUS**: Comunicación hemisférica operativa al 100%.
-*   ✅ **Biblioteca de Defensa**: Módulos de Integridad, Criptografía y Autenticación activos.
-
----
-
-## 📂 Demos Prácticas: "Esto Funciona"
-En la carpeta [/DEMO](file:///c:/Users/cyber/OneDrive/Documentos/NeuroOs/Neuro-OS-Genesis/NeuroCOBOL/DEMO/) encontraréis scripts listos para compilar y ejecutar:
-1.  **01_HolaMundo.nc**: Tu primer registro de integridad ciudadana.
-2.  **02_UI_Ventana.nc**: Orquestación de la Interfaz de Cristal (NXG).
-3.  **03_Bus_Monitor.nc**: Escucha y envío de señales al sistema nervioso del OS.
-
----
-
-## 🤝 Licencia y Atribución
-Distribuido bajo **Apache License 2.0**.
-*   **Autor**: José Manuel Moreno Cano (Arquitecto de Genesis OS).
-*   **Garantía**: Soberanía computacional y protección de la autoría original.
-
----
-*NeuroCOBOL: El Silicio a las puertas de la conciencia.*
+* **Author**: José Manuel Moreno Cano (Noxferion)
+* **Role**: AI Systems Architect & Genesis OS Creator
+* **Email**: `josem.moreno.cano@gmail.com` | `cyber.enigma@gmail.com`
+* **Phone / WhatsApp**: [+34 630 189 616](https://wa.me/34630189616)

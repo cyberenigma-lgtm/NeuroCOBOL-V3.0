@@ -80,8 +80,8 @@ static ASTNode* parse_ui_element() {
         
         ASTNode* head = NULL;
         ASTNode* current = NULL;
-        while (current_token.type != TOK_END && current_token.type != TOK_EOF) {
-            if (current_token.type == TOK_END) break;
+        while (current_token.type != TOK_END && current_token.type != TOK_END_WINDOW && current_token.type != TOK_EOF) {
+            if (current_token.type == TOK_END || current_token.type == TOK_END_WINDOW) break;
 
             ASTNode* item = parse_ui_element();
             if (!item) item = parse_statement();
@@ -95,9 +95,13 @@ static ASTNode* parse_ui_element() {
             }
         }
         node->right = head;
-        consume(TOK_END);
-        if (current_token.type == TOK_IDENTIFIER && NC_STRICMP(current_token.text, "VENTANA") == 0) {
-            consume(TOK_IDENTIFIER);
+        if (current_token.type == TOK_END_WINDOW) {
+            consume(TOK_END_WINDOW);
+        } else {
+            consume(TOK_END);
+            if (current_token.type == TOK_IDENTIFIER && NC_STRICMP(current_token.text, "VENTANA") == 0) {
+                consume(TOK_IDENTIFIER);
+            }
         }
         return node;
     } else if (current_token.type == TOK_BUTTON) {
@@ -118,9 +122,13 @@ static ASTNode* parse_ui_element() {
         }
         
         node->right = parse_logic_block();
-        consume(TOK_END);
-        if (current_token.type == TOK_IDENTIFIER && NC_STRICMP(current_token.text, "BOTON") == 0) {
-            consume(TOK_IDENTIFIER);
+        if (current_token.type == TOK_END_BUTTON) {
+            consume(TOK_END_BUTTON);
+        } else {
+            consume(TOK_END);
+            if (current_token.type == TOK_IDENTIFIER && NC_STRICMP(current_token.text, "BOTON") == 0) {
+                consume(TOK_IDENTIFIER);
+            }
         }
         return node;
     } else if (current_token.type == TOK_FIELD) {
@@ -185,8 +193,8 @@ static ASTNode* parse_file_statement() {
             strncpy(hemi, current_token.text, 31);
             consume(current_token.type);
         }
-        char composite[64];
-        snprintf(composite, 64, "%s:%s", type, hemi);
+        char composite[128];
+        snprintf(composite, sizeof(composite), "%s:%s", type, hemi);
         in_ai_module = 1; // Registro de estado activo
         return create_node(NODE_MODULE_DECL, composite);
     } else if (current_token.type == TOK_SEND) {

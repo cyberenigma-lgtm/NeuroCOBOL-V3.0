@@ -1,6 +1,7 @@
 #include "nc_lexer.h"
 #include <string.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 static const char* source_code;
 static int current_pos = 0;
@@ -58,8 +59,11 @@ static TokenType check_keyword(const char* word) {
     if (NC_STRICMP(word, "CAMPO") == 0 || NC_STRICMP(word, "FIELD") == 0) return TOK_FIELD;
     if (NC_STRICMP(word, "AL") == 0 || NC_STRICMP(word, "ON") == 0) return TOK_ON;
     if (NC_STRICMP(word, "CLIC") == 0 || NC_STRICMP(word, "CLICK") == 0) return TOK_CLICK;
-    if (NC_STRICMP(word, "FIN_VENTANA") == 0 || NC_STRICMP(word, "END_WINDOW") == 0) return TOK_END;
-    if (NC_STRICMP(word, "FIN_BOTON") == 0 || NC_STRICMP(word, "END_BUTTON") == 0) return TOK_END;
+    
+    // CORRECCIÓN BUG A: Diferenciación estricta de bloques anidados
+    if (NC_STRICMP(word, "FIN_VENTANA") == 0 || NC_STRICMP(word, "END_WINDOW") == 0) return TOK_END_WINDOW;
+    if (NC_STRICMP(word, "FIN_BOTON") == 0 || NC_STRICMP(word, "END_BUTTON") == 0) return TOK_END_BUTTON;
+
     if (NC_STRICMP(word, "ABRIR") == 0 || NC_STRICMP(word, "OPEN") == 0) return TOK_OPEN;
     if (NC_STRICMP(word, "LEER") == 0 || NC_STRICMP(word, "READ") == 0) return TOK_READ;
     if (NC_STRICMP(word, "ESCRIBIR") == 0 || NC_STRICMP(word, "WRITE") == 0) return TOK_WRITE;
@@ -105,6 +109,8 @@ const char* nc_token_type_to_string(TokenType type) {
         case TOK_END_IF: return "END_IF";
         case TOK_WINDOW: return "WINDOW";
         case TOK_BUTTON: return "BUTTON";
+        case TOK_END_WINDOW: return "END_WINDOW";
+        case TOK_END_BUTTON: return "END_BUTTON";
         case TOK_FIELD: return "FIELD";
         case TOK_ON: return "ON";
         case TOK_CLICK: return "CLICK";
@@ -157,11 +163,15 @@ Token nc_lexer_next_token() {
     
     char c = advance();
     
+    // PARCHE VULNERABILIDAD A: Evitar desbordamiento asegurando espacio para '\0'
     if (isalpha(c) || c == '_') {
         int start = current_pos - 1;
         while (isalnum(peek()) || peek() == '_') advance();
         int length = current_pos - start;
+        if (length >= (int)sizeof(token.text)) length = (int)sizeof(token.text) - 1;
+        
         strncpy(token.text, source_code + start, length);
+        token.text[length] = '\0'; // Terminación forzada segura
         token.type = check_keyword(token.text);
         return token;
     }
@@ -170,17 +180,35 @@ Token nc_lexer_next_token() {
         int start = current_pos - 1;
         while (isdigit(peek()) || peek() == '.') advance();
         int length = current_pos - start;
+        if (length >= (int)sizeof(token.text)) length = (int)sizeof(token.text) - 1;
+        
         strncpy(token.text, source_code + start, length);
+        token.text[length] = '\0'; // Terminación forzada segura
         token.type = TOK_NUMBER;
         return token;
     }
     
+    // PARCHE BUG B: Soporte nativo para escapado de comillas en Strings
     if (c == '"') {
-        int start = current_pos;
-        while (peek() != '"' && !is_at_end()) advance();
-        int length = current_pos - start;
-        strncpy(token.text, source_code + start, length);
-        if (!is_at_end()) advance(); // Cerrar comillas
+        int idx = 0;
+        int max_len = (int)sizeof(token.text) - 1;
+        
+        while (!is_at_end()) {
+            char next = peek();
+            if (next == '"') {
+                advance(); // Consumir comilla de cierre
+                break;
+            }
+            if (next == '\\' && source_code[current_pos + 1] == '"') {
+                if (idx < max_len) token.text[idx++] = '"'; // Inyectar comilla escapada
+                advance(); // Consumir '\\'
+                advance(); // Consumir '"'
+            } else {
+                if (idx < max_len) token.text[idx++] = advance();
+                else advance();
+            }
+        }
+        token.text[idx] = '\0';
         token.type = TOK_STRING;
         return token;
     }
@@ -192,7 +220,7 @@ Token nc_lexer_next_token() {
         case '-': token.type = TOK_MINUS; strcpy(token.text, "-"); break;
         case '*': token.type = TOK_STAR; strcpy(token.text, "*"); break;
         case '/': token.type = TOK_SLASH; strcpy(token.text, "/"); break;
-        default: token.type = TOK_UNKNOWN; token.text[0] = c; break;
+        default: token.type = TOK_UNKNOWN; token.text[0] = c; token.text[1] = '\0'; break;
     }
     
     return token;
