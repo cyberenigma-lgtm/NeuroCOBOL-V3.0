@@ -52,6 +52,23 @@ python HERRAMIENTAS/neurocobol_api_server.py
 
 ---
 
+## 🌍 Multilingual Specification & Master Glossary (8 Languages)
+
+Explore the official NeuroCOBOL V3.0 Specification and Master Glossary in 8 major languages:
+
+- 🇬🇧 [**English Master Glossary**](docs/languages/GLOSSARY_EN.md)
+- 🇪🇸 [**Glosario Maestro en Español**](docs/languages/GLOSARIO_ES.md)
+- 🇫🇷 [**Glossaire Maître en Français**](docs/languages/GLOSSARY_FR.md)
+- 🇵🇹 [**Glossário Mestre em Português**](docs/languages/GLOSSARY_PT.md)
+- 🇨🇳 [**中文主术语词汇表**](docs/languages/GLOSSARY_ZH.md)
+- 🇰🇷 [**한국어 마스터 용어집**](docs/languages/GLOSSARY_KO.md)
+- 🇯🇵 [**日本語マスター用語集**](docs/languages/GLOSSARY_JA.md)
+- 🇮🇳 [**हिन्दी मास्टर शब्दावली**](docs/languages/GLOSSARY_HI.md)
+
+📖 **Official GitHub Wiki**: Visit the [**NeuroCOBOL V3.0 Official GitHub Wiki**](https://github.com/cyberenigma-lgtm/NeuroCOBOL-V3.0/wiki) for complete architecture, API guides, and system design docs.
+
+---
+
 ## 📜 Intellectual Property & Copyright Notice
 
 * **Registered Title**: *NeuroCOBOL V3.0: Lenguaje de Orquestación Cognitiva, Compilador y Runtime Soberano*
