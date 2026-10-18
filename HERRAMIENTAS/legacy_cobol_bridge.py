@@ -2,7 +2,7 @@
 """
 🏛️ NEUROCOBOL V3.0 -- LEGACY COBOL TRANSPILER & BCD MATH BRIDGE
 Ubicación: HERRAMIENTAS/legacy_cobol_bridge.py
-Autor: José Manuel Moreno Cano (Noxferion) -- AI Systems Architect
+Autor: cyberenigma-lgtm (Noxferion) (Noxferion) -- AI Systems Architect
 
 Facilita la migración y sustitución de COBOL Antiguo (IBM / Micro Focus / GNU COBOL)
 hacia la arquitectura moderna de NeuroCOBOL V3.0 y Python.

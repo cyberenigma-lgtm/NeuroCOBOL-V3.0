@@ -24,7 +24,7 @@ bool GXPBuilder::Generate(const std::string& filename,
     header.version = 1;
 
     strncpy(header.package_name, pkgName.c_str(), sizeof(header.package_name) - 1);
-    strncpy(header.vendor, "José Manuel Moreno Cano", sizeof(header.vendor) - 1);
+    strncpy(header.vendor, "cyberenigma-lgtm (Noxferion)", sizeof(header.vendor) - 1);
 
     header.payload_size = (uint32_t)bytecode.size();
     header.binary_offset = (uint32_t)sizeof(GXPHeader);

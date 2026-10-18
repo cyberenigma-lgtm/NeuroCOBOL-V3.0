@@ -2,10 +2,10 @@
 """
 🌐 NEUROCOBOL V3.0 -- REST API SERVER & MICROSERVICE BRIDGE
 Ubicación: HERRAMIENTAS/neurocobol_api_server.py
-Autor: José Manuel Moreno Cano (Noxferion) -- AI Systems Architect
+Autor: cyberenigma-lgtm (Noxferion) (Noxferion) -- AI Systems Architect
 
 Expone una interfaz REST API sobre HTTP para compilar, transpilar COBOL legacy,
-validar firmas de autoridad JMMC (0x4A4D4D43) y ejecutar transacciones BCD.
+validar firmas de autoridad CYEN (0x4359454E) y ejecutar transacciones BCD.
 """
 
 import os
@@ -23,7 +23,7 @@ from legacy_cobol_bridge import LegacyCOBOLBridge
 app = Flask(__name__)
 bridge = LegacyCOBOLBridge()
 
-AUTHORITY_SEAL = "0x4A4D4D43"
+AUTHORITY_SEAL = "0x4359454E"
 
 @app.route("/api/neurocobol/health", methods=["GET"])
 def health_check():
@@ -31,7 +31,7 @@ def health_check():
         "status": "ONLINE",
         "system": "NeuroCOBOL V3.0 Microservice Bridge",
         "authority_seal": AUTHORITY_SEAL,
-        "author": "José Manuel Moreno Cano (Noxferion)",
+        "author": "cyberenigma-lgtm (Noxferion) (Noxferion)",
         "safe_creative_id": "2609217054592",
         "safe_creative_url": "https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano",
         "ip_registration": "00765-02939466"
