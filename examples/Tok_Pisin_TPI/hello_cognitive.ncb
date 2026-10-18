@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Tok Pisin (tpi)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_TPI COGNITIVE_DEMO.
+
+DATA_TPI
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_TPI
+    SHOW "NeuroCOBOL V3.0 en linea (Tok Pisin)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

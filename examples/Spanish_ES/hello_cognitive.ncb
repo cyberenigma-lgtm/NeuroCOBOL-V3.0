@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Spanish / Español (es)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAMA COGNITIVE_DEMO.
+
+DATOS
+    DEFINIR CUENTA COMO COMPRIMIDO(10,2).
+
+LOGICA
+    MOSTRAR "NeuroCOBOL V3.0 en linea (Spanish / Español)"
+    CALCULAR CUENTA = 1000 + 500 - 50
+    MOSTRAR CUENTA
+    
+    SI CUENTA > 500 ENTONCES
+        MOSTRAR "Validacion de Orquestacion: APROBADA"
+    FIN_SI
+
+FIN

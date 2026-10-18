@@ -1,40 +1,64 @@
-# 🔗 Guía de Conectividad del Ecosistema Genesis OS
-### *NeuroCOBOL como Lenguaje de Orquestación Soberana*
+# 🔗 Guía de Conectividad e Integración de Sistemas
+### *NeuroCOBOL V3.0 en el Ecosistema UPL+ y Genesis OS*
 
-NeuroCOBOL actúa como el lenguaje de voluntad que unifica todos los repositorios del ecosistema **Genesis OS**. Cada componente —NWC, NU‑ASM, GXHTML y NeuroBUS— se integra mediante un ensamblaje directo que permite que el lenguaje controle el sistema operativo a nivel cognitivo.
-
----
-
-## 🟦 1. La Vía del Silicio — NWC (NeuroWill Code Engine)
-El compilador de NeuroCOBOL traduce la intención del programador al motor de voluntad **NWC**, responsable de generar el bytecode genesis **GXP**.
-
-*   **Conectividad**: `neurocobolc.exe` enlaza con `bridge.obj` para emitir instrucciones al motor NWC. El bytecode resultante se empaqueta en formato GXP.
-*   **Ruta del repositorio**: `..\Neurowill-Code-NWC\nwcore\`
-*   **Impacto**: Cada actualización de NWC amplía automáticamente las capacidades introspectivas de NeuroCOBOL. El lenguaje evoluciona al ritmo del motor cognitivo del sistema.
-
-## 🟩 2. El Ensamblador Universal — NU‑ASM
-NeuroCOBOL genera un IR (Neural Intermediate Representation) que se traduce a **Neuro‑Universal‑ASM**, el ensamblador genesis del ecosistema.
-
-*   **Conectividad**: Cada instrucción del lenguaje (MOSTRAR, ABRIR, ENVIAR BUS…) tiene un mnemónico definido en `es.json`.
-*   **Ruta del repositorio**: `..\Neuro-Universal-ASM\languages\es.json`
-*   **Impacto**: Permite que cualquier programa NeuroCOBOL se ensamble para múltiples arquitecturas internas de Genesis OS. Garantiza coherencia entre el lenguaje, el ensamblador y el runtime.
-
-## 🟧 3. La Interfaz de Cristal — GXHTML / NXG V2
-Las interfaces declarativas de NeuroCOBOL se renderizan mediante el motor visual **Neuro-OS‑GXHTML**, responsable de la estética Glassmorphism del sistema.
-
-*   **Conectividad**: La instrucción `VENTANA` se traduce a comandos GXP interpretados por Genesis OS. **NXG V2** actúa como puente entre el bytecode y el motor visual.
-*   **Ruta del repositorio**: `..\Neuro-OS-GXHTML\`
-*   **Impacto**: Permite crear aplicaciones visuales soberanas sin necesidad de librerías externas. La UI forma parte del propio lenguaje, no de un framework externo.
-
-## 🟪 4. El Sistema Nervioso — NeuroBUS
-**NeuroBUS** es el sistema nervioso cognitivo de Genesis OS. NeuroCOBOL se integra directamente para permitir trazabilidad evolutiva, introspección y control de los 35 módulos de IA.
-
-*   **Conectividad**: `MODULO` registra el programa como agente cognitivo. `ENVIAR BUS` y `RECIBIR BUS` permiten comunicación hemisférica. `ACTIVAR NITRO` habilita el modo Overdrive del sistema.
-*   **Impacto**: El lenguaje puede interactuar con el hemisferio izquierdo, derecho o global. Permite crear aplicaciones que participan en la evolución cognitiva del sistema.
+NeuroCOBOL V3.0 actúa como la capa de alto nivel para lógica de negocio y orquestación dentro del ecosistema **Universal Polyglot Layer (UPL+)** y **Genesis OS**. Su arquitectura ANSI C99 autónoma permite una integración directa y de alto rendimiento entre la capa de compilación, el bus de comunicación inter-procesos (IPC), el ensamblador multilingüe y el kernel de aislamiento de hardware.
 
 ---
 
-### 🧠 Soberanía Tecnológica en Ensamblaje Directo
-*Por José Manuel Moreno Cano*
+## 1. Conexión con el Pipeline Compilador UPL+ (Dragon Book)
 
-NeuroCOBOL no es un lenguaje huésped. Es el lenguaje nativo de Genesis OS, diseñado para operar en simbiosis con su motor cognitivo, su ensamblador universal, su interfaz de cristal y su sistema nervioso.
+NeuroCOBOL V3.0 comparte los estándares formales del compilador UPL+ (ISO/IEC 9899:1999):
+
+*   **Interoperabilidad ABI**: Las definiciones de punto fijo BCD se generan bajo la estructura canónica con canarios de protección:
+    ```c
+    typedef struct {
+        uint8_t landing_pad_head[6];
+        int64_t valor_entero;
+        uint32_t escala;
+        uint8_t landing_pad_tail[6];
+    } NeuroCOBOL_Comp3;
+    ```
+*   **Transpilación Directa**: El comando `neurocobol compile <archivo.ncb> -o <salida.c>` emite código C99 puro enlazable directamente con cualquier toolchain estándar (GCC, Clang, MSVC).
+*   **Repositorio Central**: [`UNIVERSAL-POLYGLOT-LAYER-UPL`](https://github.com/cyberenigma-lgtm/UNIVERSAL-POLYGLOT-LAYER-UPL).
+
+---
+
+## 2. Integración con el Ecosistema MultiLang-ASM
+
+NeuroCOBOL y MultiLang-ASM comparten la misma tabla poliglotizada de tokens y directivas a través de los 154 idiomas registrados:
+
+*   **Paridad Léxica**: Cada palabra clave en español, inglés, francés, etc., se resuelve en identificadores unificados, garantizando que un módulo de cálculo financiero en NeuroCOBOL interactúe con rutinas de bajo nivel ensambladas por MultiLang-ASM.
+*   **Repositorio Central**: [`MultiLang-ASM`](https://github.com/cyberenigma-lgtm/MultiLang-ASM).
+
+---
+
+## 3. Bus de Comunicación Inter-Procesos (IPC) y Kernel Ring 0
+
+NeuroCOBOL se comunica con el núcleo de Genesis OS y los micro-agentes distribuidos mediante descriptores y sobres de mensajes IPC:
+
+*   **Sello de Autoridad**: Cada unidad binaria compilada valida la firma criptográfica **`0x4359454E`** (*CYEN*) en el offset 8 antes de adquirir privilegios de ejecución en el kernel.
+*   **Directivas de Bus**:
+    - `MODULO`: Registra la unidad de compilación en la tabla de procesos activos.
+    - `ENVIAR BUS`: Despacha un sobre de datos con paridad verificada hacia otro servicio.
+    - `RECIBIR BUS`: Escucha eventos y mensajes desde el descriptor IPC.
+
+---
+
+## 4. Motor Aritmético de Alta Precisión BCD COMP-3
+
+Para operaciones financieras, bancarias y de misión crítica:
+
+*   **Cero Redondeo IEEE-754**: La aritmética se ejecuta en punto fijo mediante enteros escalados de 64 bits y algoritmos de coma decimal exacta a 18 dígitos.
+*   **Herramienta de Diagnóstico**: Invocable en terminal mediante `nc_legacy_bridge --calc-bcd <v1> <op> <v2>`.
+
+---
+
+## 5. Ingestión y Absorción de Código COBOL Tradicional
+
+El transpilador nativo [`HERRAMIENTAS/nc_legacy_bridge.c`](../HERRAMIENTAS/nc_legacy_bridge.c) absorbe copybooks y programas legacy (IBM, Micro Focus, GNU COBOL):
+
+*   **Ingestión sin Dependencias**: 100% C99 nativo, sustituyendo scripts residuales de Python.
+*   **Emisión Flexible**: Genera fuentes `.ncb` para el motor NeuroCOBOL o fuentes `.c` compatibles con la ABI de UPL+.
+
+---
+*Especificación Técnica de Integración — cyberenigma-lgtm (Noxferion) · Genesis OS / UPL+*

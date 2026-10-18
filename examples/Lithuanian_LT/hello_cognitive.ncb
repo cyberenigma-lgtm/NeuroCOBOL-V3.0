@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Lithuanian / Lietuvių (lt)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_LT COGNITIVE_DEMO.
+
+DATA_LT
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_LT
+    SHOW "NeuroCOBOL V3.0 en linea (Lithuanian / Lietuvių)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

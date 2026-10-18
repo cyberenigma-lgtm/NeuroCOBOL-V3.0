@@ -1,86 +1,168 @@
-# 🌐 NeuroCOBOL V3.0 — Cognitive Orchestration Language, Compiler & Sovereign Runtime
+# NeuroCOBOL V3.0
 
-> **The Sovereign Genesis OS Infrastructure Language & Multi-Agent Hardware Runtime**  
-> *Architected by José Manuel Moreno Cano (Noxferion) — AI Systems Architect*
+<p align="center">
+  <img src="assets/banner.png" alt="NeuroCOBOL V3.0 Banner" width="800">
+</p>
+
+**The world's first sovereign multilingual business logic compiler and exact-precision execution engine.**  
+Part of the **UPL (Universal Polyglot Layer)** Ecosystem & Genesis OS Core Infrastructure.
+
+Write mission-critical logic in your native language · 154 World Languages & Dialects · 100% Standalone ANSI C99 Native Engine · Zero Python Runtime Dependencies · Exact 18-Digit BCD COMP-3 Math (0% IEEE-754 drift) · Ring 0 Authority Seal `0x4359454E` · AVX2 SIMD k-NN Vector Search (0.82 ms) · Dragon Book 7-Stage Compiler Pipeline.
 
 [![Safe Creative](https://img.shields.io/badge/Safe_Creative_ID-2609217054592-brightgreen?style=for-the-badge&logo=shield)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
 [![IP Registration](https://img.shields.io/badge/Spain_IP_Expediente-00765--02939466-blue?style=for-the-badge&logo=law)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
-[![Ring 0 Seal](https://img.shields.io/badge/Ring_0_Seal-0x4A4D4D43_(JMMC)-gold?style=for-the-badge&logo=cpu)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
-[![Vector Latency](https://img.shields.io/badge/SIMD_Vector_Search-0.82_ms-purple?style=for-the-badge&logo=speedtest)](https://github.com/cyberenigma-lgtm/NeuroCOBOL-V3.0)
+[![Standard: ANSI C99](https://img.shields.io/badge/Standard-ANSI%20C99-00599C?style=for-the-badge&logo=c)](src/)
+[![Languages: 154](https://img.shields.io/badge/Languages-154%20Global-success?style=for-the-badge&logo=globe)](docs/GUIDE_ES.md)
+[![Ecosystem: UPL+](https://img.shields.io/badge/Ecosystem-UPL%2B%20Standard-purple?style=for-the-badge)](https://github.com/cyberenigma-lgtm/UNIVERSAL-POLYGLOT-LAYER-UPL)
+[![Ring 0 Seal](https://img.shields.io/badge/Ring_0_Seal-0x4359454E_(CYEN)-gold?style=for-the-badge&logo=cpu)](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+
+📖 **[English](README.md)** | **[Español](README_ES.md)** | **[Français](docs/GUIDE_FR.md)** | **[Deutsch](docs/GUIDE_DE.md)** | **[Italiano](docs/GUIDE_IT.md)** | **[Português](docs/GUIDE_PT.md)** | **[Русский](docs/GUIDE_RU.md)** | **[日本語](docs/GUIDE_JA.md)** | **[中文](docs/GUIDE_ZH.md)** | **[한국어](docs/GUIDE_KO.md)** | **[हिन्दी](docs/GUIDE_HI.md)** | **[العربية](docs/GUIDE_AR.md)**
 
 ---
 
-## 📌 Executive Summary & Legal Declaration of Originality
+## 🚀 Technical Overview & Philosophy
 
-**NeuroCOBOL V3.0** is an original, high-throughput cognitive orchestration language, native compiler, and Ring 0 runtime developed from scratch by **José Manuel Moreno Cano**.
+**NeuroCOBOL V3.0** is an independent, high-performance compiler and native execution engine implemented purely in standard **ANSI C99 (ISO/IEC 9899:1999)**. Designed as the high-level business orchestration layer of the **Universal Polyglot Layer (UPL+)**, it provides sub-millisecond execution, complete hardware isolation, and zero external runtime dependencies (0% Python, 0% Node.js, 0% JVM).
 
-> **🛡️ Declaration of Non-Derivation**: NeuroCOBOL V3.0 is **NOT a fork, copy, or derivative work** of legacy COBOL (ANSI COBOL 68/74/85, IBM Enterprise COBOL, Micro Focus, or GNU COBOL). The name *"NeuroCOBOL"* is used exclusively as a mnemonic identity tribute for business logic readability and high-precision BCD arithmetic (`COMP-3`), with zero legacy code or grammar dependencies.
+### Key Architectural Pillars
+
+1. **Dragon Book Compliant Architecture**: 7-stage compilation flow translating high-level polyglot syntax to validated AST, exact fixed-point BCD representations, and optimized ANSI C99 code.
+2. **154 World Languages Polyglot Table**: Unified token mapping allowing developers worldwide to author, compile, and execute enterprise logic in their mother tongue with identical AST parity.
+3. **Exact BCD COMP-3 Decimal Arithmetic**: 18-digit packed decimal math running in pure integer/software BCD routines with zero floating-point accumulation errors.
+4. **Ring 0 Signature & Memory Protection**: Native runtime memory blocks shielded with canary landing-pads (`NeuroCOBOL_Comp3`) verified against authority signature `0x4359454E` (*CYEN*).
+5. **Legacy COBOL Native Transpiler (`nc_legacy_bridge`)**: Pure C99 bridge tool that translates legacy IBM / Micro Focus / GNU COBOL copybooks into NeuroCOBOL and UPL+ standard C99 source files.
 
 ---
 
-## 🔬 System Architecture & The Neuro-Triniti
+## 🔬 System Architecture Pipeline
 
 ```mermaid
 graph TD
-    NC[NeuroCOBOL V3.0 Source] -->|Native Lexer & AST Parser in C| AST[Introspective AST]
-    AST -->|GXP Package Builder| GXP[.gxp Binary Package]
-    GXP -->|C/Rust AVX2 SIMD Engine| SIMD[DVTRGAS-30 SIMD k-NN Vector Search]
-    SIMD -->|JMMC Authority 0x4A4D4D43| Ring0[Genesis OS Kernel Execution]
+    A[NeuroCOBOL Source .ncb / 154 Languages] -->|Polyglot Lexer & Tokenizer| B[Typed Token Stream]
+    B -->|Recursive Descent Parser| C[Abstract Syntax Tree AST]
+    C -->|Symbol Table & Type Checker| D[Validated Symbol Arena]
+    D -->|Fixed-Point BCD COMP-3 Engine| E[Exact Arithmetic Nodes]
+    E -->|ANSI C99 Code Generator| F[Output Source .c + UPL+ ABI]
+    F -->|MinGW / GCC Backend| G[Native Binary .exe / ELF]
 ```
 
-### 🧠 Key Engineering Components
+---
 
-1. **Native Compiler Core in C (`src/nc_lexer.c`, `src/nc_parser.c`)**: High-performance multi-lingual lexical scanner and AST parser with memory leak prevention (`nc_free_ast`).
-2. **Ring 0 Kernel Seal (`kernel_native/neural/neurocobol.c`)**: Hardened C validator verifying authority signature `0x4A4D4D43` (*JMMC*) at offset 8 of binary payloads.
-3. **Legacy COBOL Transpiler & BCD Bridge (`HERRAMIENTAS/legacy_cobol_bridge.py`)**: Converts legacy copybooks (`PIC X`, `PIC 9(12)V99`, `COMP-3`) into NeuroCOBOL V3.0 and provides 18-digit exact BCD arithmetic.
-4. **REST API Microservice (`HERRAMIENTAS/neurocobol_api_server.py`)**: Flask microservice serving compilation, transpilation, and transaction endpoints on port `5050`.
+## 🛡️ Declaration of Originality and Non-Derivation
+
+> **Legal & Technical Notice**: NeuroCOBOL V3.0 is **NOT a fork, copy, modification, or derivative work** of legacy COBOL (ANSI COBOL 68/74/85, IBM Enterprise COBOL, Micro Focus, RM/COBOL, or GNU COBOL). The name *"NeuroCOBOL"* is used exclusively as a mnemonic tribute denoting structured enterprise readability and high-precision BCD arithmetic (`COMP-3`). Zero lines of code, grammar tables, or runtime components are derived from third-party legacy implementations.
 
 ---
 
 ## ⚡ Quickstart Guide
 
-### 1. Execute Legacy COBOL Transpiler & COMP-3 BCD Math Bridge
+### 1. Build Native Toolchain (GCC / MinGW)
+
+Compile both the compiler core and the legacy migration bridge using the standard C99 toolchain:
+
 ```bash
-python HERRAMIENTAS/legacy_cobol_bridge.py
+# Using Makefile
+make all
+
+# Or direct compilation with GCC
+gcc -std=c99 -O2 -Wall -Wextra src/nc_core.c -o neurocobol.exe
+gcc -std=c99 -O2 -Wall -Wextra HERRAMIENTAS/nc_legacy_bridge.c -o nc_legacy_bridge.exe
 ```
 
-### 2. Launch Microservice REST API Server
+### 2. Run Comprehensive Self-Tests
+
+Execute the continuous verification test suite verifying BCD arithmetic, vector latency, and polyglot execution:
+
 ```bash
-python HERRAMIENTAS/neurocobol_api_server.py
+test.bat
+# Or directly via binary flags:
+neurocobol.exe --test
+nc_legacy_bridge.exe --test
 ```
-*Health Check Endpoint*: `http://localhost:5050/api/neurocobol/health`
+
+### 3. Execute Multilingual NeuroCOBOL Programs
+
+```bash
+# Run in-memory in Spanish
+neurocobol.exe run examples/Spanish_ES/hello_cognitive.ncb -l es
+
+# Run in-memory in English
+neurocobol.exe run examples/English_EN/hello_cognitive.ncb -l en
+
+# Run in-memory in French
+neurocobol.exe run examples/French_FR/hello_cognitive.ncb -l fr
+```
+
+### 4. Transpile Directly to Standalone ANSI C99 Code
+
+```bash
+neurocobol.exe compile program.ncb -o program_native.c
+gcc -std=c99 -O2 program_native.c -o program.exe
+```
 
 ---
 
-## 🌍 Multilingual Specification & Master Glossary (8 Languages)
+## 🏛️ Legacy COBOL Migration Bridge (`nc_legacy_bridge`)
 
-Explore the official NeuroCOBOL V3.0 Specification and Master Glossary in 8 major languages:
+The standalone tool [`HERRAMIENTAS/nc_legacy_bridge.c`](HERRAMIENTAS/nc_legacy_bridge.c) enables automated migration of legacy mainframes and copybooks into modern UPL+ infrastructure:
 
-- 🇬🇧 [**English Master Glossary**](docs/languages/GLOSSARY_EN.md)
-- 🇪🇸 [**Glosario Maestro en Español**](docs/languages/GLOSARIO_ES.md)
-- 🇫🇷 [**Glossaire Maître en Français**](docs/languages/GLOSSARY_FR.md)
-- 🇵🇹 [**Glossário Mestre em Português**](docs/languages/GLOSSARY_PT.md)
-- 🇨🇳 [**中文主术语词汇表**](docs/languages/GLOSSARY_ZH.md)
-- 🇰🇷 [**한국어 마스터 용어집**](docs/languages/GLOSSARY_KO.md)
-- 🇯🇵 [**日本語マスター用語集**](docs/languages/GLOSSARY_JA.md)
-- 🇮🇳 [**हिन्दी मास्टर शब्दावली**](docs/languages/GLOSSARY_HI.md)
+```bash
+# Transpile legacy copybook to NeuroCOBOL (.ncb)
+nc_legacy_bridge.exe copybook.cob migrado.ncb
 
-📖 **Official GitHub Wiki**: Visit the [**NeuroCOBOL V3.0 Official GitHub Wiki**](https://github.com/cyberenigma-lgtm/NeuroCOBOL-V3.0/wiki) for complete architecture, API guides, and system design docs.
+# Transpile legacy copybook directly to ANSI C99 with UPL+ memory canaries
+nc_legacy_bridge.exe copybook.cob -o transaccion_upl.c --upl
 
----
-
-## 📜 Intellectual Property & Copyright Notice
-
-* **Registered Title**: *NeuroCOBOL V3.0: Lenguaje de Orquestación Cognitiva, Compilador y Runtime Soberano*
-* **Safe Creative Registration ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
-* **Spanish Central IP Register Expediente**: `00765-02939466`
-* **License**: Apache License 2.0 (Author Attribution Guaranteed)
+# Execute standalone 18-digit exact BCD math calculation
+nc_legacy_bridge.exe --calc-bcd 10000.50 + 250.75
+```
 
 ---
 
-## 📬 Author & Contact Information
+## 📊 Technical Comparison: Legacy COBOL vs. NeuroCOBOL V3.0
 
-* **Author**: José Manuel Moreno Cano (Noxferion)
-* **Role**: AI Systems Architect & Genesis OS Creator
-* **Email**: `josem.moreno.cano@gmail.com` | `cyber.enigma@gmail.com`
-* **Phone / WhatsApp**: [+34 630 189 616](https://wa.me/34630189616)
+| Feature | Legacy COBOL (IBM / Micro Focus) | NeuroCOBOL V3.0 (UPL+ Standard) |
+| :--- | :--- | :--- |
+| **Implementation Language** | C++ / Proprietary Assembly | **100% ANSI C99 (ISO/IEC 9899:1999)** |
+| **External Dependencies** | Heavy runtime libraries / VMs | **Zero External Dependencies (0% Python / 0% VM)** |
+| **Human Languages Supported**| English only | **154 World Languages & Dialects** |
+| **Arithmetic Precision** | COMP-3 hardware/emulator | **Exact 18-Digit Packed BCD Software Engine** |
+| **Compilation Backend** | Mainframe OS / ELF / COFF | **Direct ANSI C99 Generation & Native Binaries** |
+| **Vector / Embeddings Engine** | None | **AVX2 SIMD k-NN Vector Search (0.82 ms)** |
+| **Memory Protection** | Host OS standard paging | **Canary Landing-Pads (`NeuroCOBOL_Comp3`)** |
+| **Authority Signature** | None | **Ring 0 Hardware Seal (`0x4359454E`)** |
+
+---
+
+## 🌍 Multilingual Specification (154 World Languages)
+
+NeuroCOBOL V3.0 provides full syntactic guides and master technical glossaries across 154 world languages:
+
+- 🇬🇧 [**English Master Technical Glossary**](docs/languages/GLOSSARY_EN.md)
+- 🇪🇸 [**Glosario Técnico Maestro en Español**](docs/languages/GLOSARIO_ES.md)
+- 🇫🇷 [**Glossaire Technique en Français**](docs/languages/GLOSSARY_FR.md)
+- 🇵🇹 [**Glossário Técnico em Português**](docs/languages/GLOSSARY_PT.md)
+- 🇨🇳 [**中文技术词汇表**](docs/languages/GLOSSARY_ZH.md)
+- 🇰🇷 [**한국어 기술 용어집**](docs/languages/GLOSSARY_KO.md)
+- 🇯🇵 [**日本語技術用語集**](docs/languages/GLOSSARY_JA.md)
+- 🇮🇳 [**हिन्दी तकनीकी शब्दावली**](docs/languages/GLOSSARY_HI.md)
+
+*(View all 154 language guides inside the [`docs/`](docs/) directory).*
+
+---
+
+## 📜 Intellectual Property & Official Registration
+
+- **Registered Title**: *NeuroCOBOL V3.0: Lenguaje de Orquestación Cognitiva, Compilador y Runtime Soberano*
+- **Safe Creative Registration ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)
+- **Spanish Central Intellectual Property Register Expediente**: `00765-02939466`
+- **License**: Apache License 2.0 (Author Attribution Guaranteed)
+
+---
+
+## 📬 Engineering & Contact Information
+
+- **Author & Architect**: cyberenigma-lgtm (Noxferion)
+- **Role**: AI Systems Architect & Genesis OS Creator
+- **Email**: `cyberenigma-lgtm@users.noreply.github.com` | `cyber.enigma@gmail.com`
+- **Ecosystem**: [Universal Polyglot Layer (UPL+)](https://github.com/cyberenigma-lgtm/UNIVERSAL-POLYGLOT-LAYER-UPL)

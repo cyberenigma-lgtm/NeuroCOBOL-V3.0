@@ -35,7 +35,7 @@ Este ecosistema cumple con los requisitos de:
 ---
 ✨ **NeuroCOBOL V2.7 no es una actualización. Es la consolidación de un lenguaje genesis.**
 
-**Por José Manuel Moreno Cano**  
+**Por cyberenigma-lgtm (Noxferion)**  
 Arquitecto de Genesis OS  
 Titular del expediente 00765-02939466  
 *Fecha de Efecto: 31 de Marzo de 2026*

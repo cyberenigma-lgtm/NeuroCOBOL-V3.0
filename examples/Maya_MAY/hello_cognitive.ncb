@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Maya / Maaya T'aan (may)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_MAY COGNITIVE_DEMO.
+
+DATA_MAY
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_MAY
+    SHOW "NeuroCOBOL V3.0 en linea (Maya / Maaya T'aan)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

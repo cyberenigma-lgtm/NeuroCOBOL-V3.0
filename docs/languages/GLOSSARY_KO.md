@@ -1,10 +1,10 @@
 # 📖 마스터 용어집: NeuroCOBOL V3.0 (한국어)
 ### *Genesis OS 인프라 언어 및 인지 오케스트레이션 실행 런타임*
 
-> **작성자**: José Manuel Moreno Cano (Noxferion) — AI 시스템 아키텍트  
+> **작성자**: cyberenigma-lgtm (Noxferion) (Noxferion) — AI 시스템 아키텍트  
 > **Safe Creative 공식 등록 ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **스페인 국가 지식재산 등록번호**: `00765-02939466`  
-> **Ring 0 권한 인장**: `0x4A4D4D43` (*JMMC*)
+> **Ring 0 권한 인장**: `0x4359454E` (*CYEN*)
 
 ---
 

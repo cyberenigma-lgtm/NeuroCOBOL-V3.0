@@ -1,10 +1,10 @@
 # 📖 主术语词汇表：NeuroCOBOL V3.0（中文）
 ### *Genesis OS 基础设施语言与认知编排运行时*
 
-> **作者**: José Manuel Moreno Cano (Noxferion) — AI 系统架构师  
+> **作者**: cyberenigma-lgtm (Noxferion) (Noxferion) — AI 系统架构师  
 > **Safe Creative 官方登记 ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **西班牙国家知识产权局卷宗号**: `00765-02939466`  
-> **Ring 0 权威权威印章**: `0x4A4D4D43` (*JMMC*)
+> **Ring 0 权威权威印章**: `0x4359454E` (*CYEN*)
 
 ---
 

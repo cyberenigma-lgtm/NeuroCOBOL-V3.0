@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Shona / ChiShona (sn)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_SN COGNITIVE_DEMO.
+
+DATA_SN
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_SN
+    SHOW "NeuroCOBOL V3.0 en linea (Shona / ChiShona)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

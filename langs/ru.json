@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Russian / Русский",
+    "code": "ru",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Russian / Русский"
+  },
+  "keywords": {
+    "program": "ПРОГРАММА",
+    "data": "ДАННЫЕ",
+    "logic": "ЛОГИКА",
+    "end": "КОНЕЦ",
+    "define": "ОПРЕДЕЛИТЬ",
+    "as": "КАК",
+    "show": "ПОКАЗАТЬ",
+    "compute": "ВЫЧИСЛИТЬ",
+    "if": "ЕСЛИ",
+    "then": "ТО",
+    "else": "ИНАЧЕ",
+    "end_if": "КОНЕЦ_ЕСЛИ",
+    "perform": "ВЫПОЛНИТЬ",
+    "module": "МОДУЛЬ",
+    "bus": "ШИНА",
+    "send": "ОТПРАВИТЬ",
+    "receive": "ПОЛУЧИТЬ",
+    "nitro": "НИТРО",
+    "compressed": "СЖАТЫЙ",
+    "defense": "ЗАЩИТА",
+    "integrity": "ЦЕЛОСТНОСТЬ",
+    "crypto": "КРИПТО",
+    "auth": "АУТЕНТИФИКАЦИЯ",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "НЕЙРО_ИНСПЕКЦИЯ"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Hindi / हिन्दी",
+    "code": "hi",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Hindi / हिन्दी"
+  },
+  "keywords": {
+    "program": "कार्यक्रम",
+    "data": "डेटा",
+    "logic": "तर्क",
+    "end": "समाप्त",
+    "define": "परिभाषित",
+    "as": "के_रूप_में",
+    "show": "दिखाएं",
+    "compute": "गणना",
+    "if": "यदि",
+    "then": "तो",
+    "else": "अन्यथा",
+    "end_if": "समाप्त_यदि",
+    "perform": "निष्पादित",
+    "module": "मॉड्यूल",
+    "bus": "बस",
+    "send": "भेजें",
+    "receive": "प्राप्त_करें",
+    "nitro": "नाइट्रो",
+    "compressed": "संकुचित",
+    "defense": "रक्षा",
+    "integrity": "अखंडता",
+    "crypto": "क्रिप्टो",
+    "auth": "प्रमाणीकरण",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "तंत्रिका_निरीक्षण"
+  }
+}

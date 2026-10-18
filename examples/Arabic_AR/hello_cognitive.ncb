@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Arabic / العربية (ar)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+برنامج COGNITIVE_DEMO.
+
+بيانات
+    تعريف CUENTA مثل مضغوط(10,2).
+
+منطق
+    عرض "NeuroCOBOL V3.0 en linea (Arabic / العربية)"
+    حساب CUENTA = 1000 + 500 - 50
+    عرض CUENTA
+    
+    اذا CUENTA > 500 حينئذ
+        عرض "Validacion de Orquestacion: APROBADA"
+    نهاية_اذا
+
+نهاية

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Catalan / Català",
+    "code": "ca",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Catalan / Català"
+  },
+  "keywords": {
+    "program": "PROGRAM_CA",
+    "data": "DATA_CA",
+    "logic": "LOGIC_CA",
+    "end": "END",
+    "define": "DEFINE",
+    "as": "AS",
+    "show": "SHOW",
+    "compute": "COMPUTE",
+    "if": "IF",
+    "then": "THEN",
+    "else": "ELSE",
+    "end_if": "END_IF",
+    "perform": "PERFORM",
+    "module": "MODULE",
+    "bus": "BUS",
+    "send": "SEND",
+    "receive": "RECEIVE",
+    "nitro": "NITRO",
+    "compressed": "COMPRESSED",
+    "defense": "DEFENSE",
+    "integrity": "INTEGRITY",
+    "crypto": "CRYPTO",
+    "auth": "AUTH",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "NEURAL_INSPECT"
+  }
+}

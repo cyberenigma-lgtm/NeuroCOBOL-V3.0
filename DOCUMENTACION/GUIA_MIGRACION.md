@@ -1,79 +1,107 @@
-# 🧬 Guía de Migración: De COBOL a NeuroCOBOL Genesis
-### *Transformando el Legado en Soberanía Computacional*
+# Guía de Migración Técnica: De COBOL Legacy a NeuroCOBOL / UPL+
+### *Transpilación y Modernización Nativa ANSI C99*
 
-Este documento guía al arquitecto en el proceso de traslación del legado empresarial hacia el paradigma de **Soberanía Computacional** definido por **Genesis OS**. El objetivo no es “modernizar COBOL”, sino elevarlo a un lenguaje capaz de interactuar con el sistema nervioso cognitivo del OS.
+Este documento establece las especificaciones técnicas para migrar programas y copybooks desde entornos COBOL tradicionales (ANSI 68/74/85, IBM Enterprise COBOL, Micro Focus) hacia el estándar nativo **NeuroCOBOL V3.0** y la arquitectura **UPL+ (Universal Polyglot Layer)**.
 
 ---
 
-## 🟦 1. Correspondencia Estructural
-NeuroCOBOL elimina la rigidez del COBOL clásico y la sustituye por una estructura centrada en la **Voluntad del Programador**.
+## 1. Correspondencia Estructural de Gramática
 
-| COBOL Clásico (Legacy) | NeuroCOBOL (Genesis) | Notas |
+NeuroCOBOL estructura el código en bloques declarativos simplificados, eliminando la verbosidad de divisiones heredadas y optimizando la generación de código para el backend C99.
+
+| COBOL Tradicional (Legacy) | NeuroCOBOL (UPL+) | Descripción Técnica |
 | :--- | :--- | :--- |
-| `IDENTIFICATION DIVISION` | `PROGRAMA [Nombre]` | Declaración directa de intención. |
-| `DATA DIVISION / WORKING-STORAGE` | `DATOS ... FIN` | Variables globales, introspectivas. |
-| `PROCEDURE DIVISION` | `LOGICA ... FIN` | Núcleo de voluntad ejecutable. |
-| `DISPLAY` | `MOSTRAR / SHOW` | Bilingüe, integrado en NXG. |
-| `ACCEPT` | `RECIBIR BUS` | El usuario es parte del sistema nervioso. |
-| `STOP RUN` | `FIN` | Cierre de intención soberana. |
-
-**Principio clave**: COBOL describe procesos. NeuroCOBOL describe voluntad.
-
----
-
-## 🟩 2. Tipos de Datos Genesiss
-NeuroCOBOL sustituye las cláusulas `PIC` por tipos introspectivos y directos:
-
-- **NUMERO**: Sustituye a `PIC 9(V9)`. Precisión automática, sin sintaxis arcaica.
-- **TEXTO**: Sustituye a `PIC X(N)`. Unicode, dinámico, seguro.
-- **REGISTRO**: Sustituye a estructuras complejas. Ideal para I/O industrial y paquetes GXP.
-
-**Principio clave**: Los tipos ya no describen memoria; describen intención.
+| `IDENTIFICATION DIVISION.` | `PROGRAMA [Identificador].` | Declaración de la unidad de compilación. |
+| `DATA DIVISION / WORKING-STORAGE.` | `DATOS ...` | Sección de asignación en tabla de símbolos. |
+| `PROCEDURE DIVISION.` | `LOGICA ...` | Bloque principal de instrucciones y flujo de ejecución. |
+| `DISPLAY [Expr]` | `MOSTRAR [Expr]` / `SHOW [Expr]` | Emisión estándar de salida formateada (stdout). |
+| `ACCEPT [Var]` | `RECIBIR BUS [Var]` | Lectura desde descriptor de entrada o bus IPC. |
+| `COMPUTE [Var] = [Expr]` | `CALCULAR [Var] = [Expr]` | Evaluación aritmética con soporte de punto fijo. |
+| `MOVE [A] TO [B]` | `CALCULAR [B] = [A]` | Asignación y copia de datos entre variables. |
+| `IF [Cond] ... ELSE ... END-IF` | `SI [Cond] ... SINO ... FIN_SI` | Bifurcación condicional estructurada. |
+| `STOP RUN.` | `FIN PROGRAMA.` | Finalización de la unidad de ejecución (exit code 0). |
 
 ---
 
-## 🟧 3. Ejemplo de Traslación (Workflow Completo)
+## 2. Correspondencia de Tipos de Datos y Precisión Decimal
 
-### 🟫 Legacy COBOL
+NeuroCOBOL mapea las cláusulas arcaicas `PIC` a tipos tipados de alta precisión respaldados por estructuras nativas C99:
+
+| Cláusula Legacy | Tipo NeuroCOBOL | Equivalente en Backend C99 / UPL+ | Especificación |
+| :--- | :--- | :--- | :--- |
+| `PIC 9(n)V99 COMP-3` | `NUMERO COMPRIMIDO 9(n)V99` | `NeuroCOBOL_Comp3` | BCD empaquetado exacto (18 dígitos, escala fija, 0 errores IEEE-754). |
+| `PIC X(n)` | `TEXTO TAMAÑO n` | `char buffer[n + 1]` | Cadena de caracteres ASCII/UTF-8 con terminador nulo. |
+| `PIC 9(n)` | `ENTERO TAMAÑO n` | `int64_t` | Entero con signo de 64 bits. |
+| `PIC 9(n)V9(m)` | `NUMERO 9(n)V9(m)` | `double` / Punto Fijo Escalate | Valor numérico decimal de precisión configurada. |
+
+---
+
+## 3. Ejemplo Práctico de Transpilación
+
+### Código Fuente Legacy (COBOL)
 ```cobol
 IDENTIFICATION DIVISION.
-PROGRAM-ID. HOLA_MUNDO.
+PROGRAM-ID. TRANSACCION.
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 SALDO-CUENTA      PIC 9(10)V99 COMP-3.
+01 NOMBRE-CLIENTE    PIC X(30).
 PROCEDURE DIVISION.
-    DISPLAY "HOLA MUNDO".
+    DISPLAY "PROCESANDO TRANSACCION BANCARIA".
+    COMPUTE SALDO-CUENTA = SALDO-CUENTA + 150.50.
     STOP RUN.
 ```
 
-### 🟪 Soberanía NeuroCOBOL
+### Código Transpilado a NeuroCOBOL (`.ncb`)
 ```neurocobol
-PROGRAMA HolaMundo
+PROGRAMA ModuloTranspilado.
+
+DATOS
+    DEFINIR SALDO-CUENTA COMO NUMERO COMPRIMIDO 9(10)V99
+    DEFINIR NOMBRE-CLIENTE COMO TEXTO TAMAÑO 30
+
 LOGICA
-    MOSTRAR "HOLA MUNDO GENESIS"
-FIN
+    MOSTRAR "PROCESANDO TRANSACCION BANCARIA"
+    CALCULAR SALDO-CUENTA = SALDO-CUENTA + 150.50
+
+FIN PROGRAMA.
 ```
 
 ---
 
-## 🟪 4. Inyección de Capacidades Genesis
-Una vez migrada la lógica, el programa puede ser elevado al sistema cognitivo mediante tres comandos genesiss:
+## 4. Uso del Transpilador Nativo C99 (`nc_legacy_bridge`)
 
-1.  **MODULO**: Registra el programa como agente del sistema nervioso (`MODULO LENGUAJE IZQUIERDO`).
-2.  **VENTANA**: Permite crear interfaces de cristal con NXG V2.
-3.  **ENVIAR BUS**: Conecta la lógica con los 35 módulos de IA.
+La herramienta autónoma `nc_legacy_bridge` (escrita 100% en ANSI C99) automatiza la migración sin dependencias externas:
 
----
+```bash
+# 1. Compilar la herramienta nativa
+gcc -std=c99 -O2 HERRAMIENTAS/nc_legacy_bridge.c -o nc_legacy_bridge.exe
 
-## 🧠 5. Recomendaciones de Migración
-1.  Migrar primero la estructura (`PROGRAMA / DATOS / LOGICA`).
-2.  Sustituir `DISPLAY` → `MOSTRAR`.
-3.  Sustituir `ACCEPT` → `RECIBIR BUS` (si procede).
-4.  Reemplazar estructuras `PIC` por tipos genesiss.
-5.  Añadir capacidades Genesis solo cuando la lógica esté estable.
-6.  Validar con `gxp_inspect` y `neurobus_monitor`.
+# 2. Transpilar archivo legacy a código NeuroCOBOL (.ncb)
+nc_legacy_bridge.exe copybook.cob transaccion.ncb
 
----
+# 3. Transpilar directamente a ANSI C99 conforme al estándar UPL+
+nc_legacy_bridge.exe copybook.cob -o transaccion_upl.c --upl
 
-## 🛡️ 6. Cierre
-Migrar a NeuroCOBOL no es un ejercicio técnico: es un acto de **Soberanía Computacional**, donde el legado empresarial se transforma en un agente vivo dentro de **Genesis OS**.
+# 4. Validar cálculos BCD COMP-3 en línea de comandos
+nc_legacy_bridge.exe --calc-bcd 10000.50 + 250.75
+```
 
 ---
-*Transformando el legado en soberanía — José Manuel Moreno Cano.*
+
+## 5. Pipeline de Compilación a Binario Nativo
+
+```
+[Legacy COBOL .cob]
+         │  (nc_legacy_bridge.exe)
+         ▼
+[NeuroCOBOL .ncb]
+         │  (neurocobol.exe compile)
+         ▼
+[ANSI C99 .c + UPL_Comp3 ABI]
+         │  (GCC / MinGW)
+         ▼
+[Binario Nativo Ejecutable (.exe / ELF)]
+```
+
+*Especificación técnica validada bajo arquitectura UPL+ — cyberenigma-lgtm (Noxferion).*

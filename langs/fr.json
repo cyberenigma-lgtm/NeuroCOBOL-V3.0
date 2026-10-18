@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "French / Français",
+    "code": "fr",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for French / Français"
+  },
+  "keywords": {
+    "program": "PROGRAMME",
+    "data": "DONNEES",
+    "logic": "LOGIQUE",
+    "end": "FIN",
+    "define": "DEFINIR",
+    "as": "COMME",
+    "show": "AFFICHER",
+    "compute": "CALCULER",
+    "if": "SI",
+    "then": "ALORS",
+    "else": "SINON",
+    "end_if": "FIN_SI",
+    "perform": "EXECUTER",
+    "module": "MODULE",
+    "bus": "BUS",
+    "send": "ENVOYER",
+    "receive": "RECEVOIR",
+    "nitro": "NITRO",
+    "compressed": "COMPRESSE",
+    "defense": "DEFENSE",
+    "integrity": "INTEGRITE",
+    "crypto": "CRYPTO",
+    "auth": "AUTH",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "INSPECTION_NEURONALE"
+  }
+}

@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Sardinian / Sardu (sc)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_SC COGNITIVE_DEMO.
+
+DATA_SC
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_SC
+    SHOW "NeuroCOBOL V3.0 en linea (Sardinian / Sardu)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

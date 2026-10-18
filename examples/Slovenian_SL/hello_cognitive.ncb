@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Slovenian / Slovenščina (sl)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_SL COGNITIVE_DEMO.
+
+DATA_SL
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_SL
+    SHOW "NeuroCOBOL V3.0 en linea (Slovenian / Slovenščina)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

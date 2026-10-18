@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Japanese / 日本語",
+    "code": "ja",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Japanese / 日本語"
+  },
+  "keywords": {
+    "program": "プログラム",
+    "data": "データ",
+    "logic": "ロジック",
+    "end": "終了",
+    "define": "定義",
+    "as": "として",
+    "show": "表示",
+    "compute": "計算",
+    "if": "もし",
+    "then": "ならば",
+    "else": "そうでなければ",
+    "end_if": "終了_もし",
+    "perform": "実行",
+    "module": "モジュール",
+    "bus": "バス",
+    "send": "送信",
+    "receive": "受信",
+    "nitro": "ニトロ",
+    "compressed": "圧縮",
+    "defense": "防御",
+    "integrity": "整合性",
+    "crypto": "暗号",
+    "auth": "認証",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "ニューラル検査"
+  }
+}

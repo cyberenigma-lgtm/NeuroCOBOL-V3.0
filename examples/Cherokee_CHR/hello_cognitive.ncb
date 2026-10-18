@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Cherokee / ᏣᎳᎩ (chr)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_CHR COGNITIVE_DEMO.
+
+DATA_CHR
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_CHR
+    SHOW "NeuroCOBOL V3.0 en linea (Cherokee / ᏣᎳᎩ)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

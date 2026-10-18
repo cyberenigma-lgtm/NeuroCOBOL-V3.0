@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Hindi / हिन्दी (hi)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+कार्यक्रम COGNITIVE_DEMO.
+
+डेटा
+    परिभाषित CUENTA के_रूप_में संकुचित(10,2).
+
+तर्क
+    दिखाएं "NeuroCOBOL V3.0 en linea (Hindi / हिन्दी)"
+    गणना CUENTA = 1000 + 500 - 50
+    दिखाएं CUENTA
+    
+    यदि CUENTA > 500 तो
+        दिखाएं "Validacion de Orquestacion: APROBADA"
+    समाप्त_यदि
+
+समाप्त

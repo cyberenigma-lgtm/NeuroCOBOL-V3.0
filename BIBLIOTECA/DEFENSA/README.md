@@ -39,4 +39,4 @@ La **Biblioteca de Defensa Soberana** proporciona las herramientas críticas par
 > El intento de acceso no autorizado generará un **Error Crítico de Integridad** y bloqueará la generación del binario GXP.
 
 ---
-*Defendiendo el silicio, protegiendo la voluntad — José Manuel Moreno Cano.*
+*Defendiendo el silicio, protegiendo la voluntad — cyberenigma-lgtm (Noxferion).*

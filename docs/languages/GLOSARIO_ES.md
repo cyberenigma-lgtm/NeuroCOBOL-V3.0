@@ -1,10 +1,10 @@
 # 📖 Glosario Maestro: NeuroCOBOL V3.0 (Español)
 ### *El Lenguaje de Infraestructura y Orquestación Cognitiva para Genesis OS*
 
-> **Autor**: José Manuel Moreno Cano (Noxferion) — Arquitecto de Sistemas de IA  
+> **Autor**: cyberenigma-lgtm (Noxferion) (Noxferion) — Arquitecto de Sistemas de IA  
 > **Registro Oficial Safe Creative ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **Expediente Propiedad Intelectual España**: `00765-02939466`  
-> **Sello de Autoridad Anillo 0**: `0x4A4D4D43` (*JMMC*)
+> **Sello de Autoridad Anillo 0**: `0x4359454E` (*CYEN*)
 
 ---
 

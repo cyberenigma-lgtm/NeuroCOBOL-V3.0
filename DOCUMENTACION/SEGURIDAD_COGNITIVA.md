@@ -27,4 +27,4 @@ Para cumplir con el expediente **00765‑02939466**, cada programa debe:
 Al utilizar el comando `MODULO`, el compilador activa el rastreo de integridad. A partir de ese momento, cualquier comportamiento anómalo (como mensajes vacíos) se elevará a la categoría de **ERROR**, bloqueando la creación del paquete binario **GXP**.
 
 ---
-*Defensa Cognitiva y Soberanía — José Manuel Moreno Cano.*
+*Defensa Cognitiva y Soberanía — cyberenigma-lgtm (Noxferion).*

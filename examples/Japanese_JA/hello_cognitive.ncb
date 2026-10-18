@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Japanese / 日本語 (ja)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+プログラム COGNITIVE_DEMO.
+
+データ
+    定義 CUENTA として 圧縮(10,2).
+
+ロジック
+    表示 "NeuroCOBOL V3.0 en linea (Japanese / 日本語)"
+    計算 CUENTA = 1000 + 500 - 50
+    表示 CUENTA
+    
+    もし CUENTA > 500 ならば
+        表示 "Validacion de Orquestacion: APROBADA"
+    終了_もし
+
+終了

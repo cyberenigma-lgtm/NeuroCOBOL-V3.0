@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Akan (ak)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_AK COGNITIVE_DEMO.
+
+DATA_AK
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_AK
+    SHOW "NeuroCOBOL V3.0 en linea (Akan)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

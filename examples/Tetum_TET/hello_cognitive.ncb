@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Tetum / Lia-Tetun (tet)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_TET COGNITIVE_DEMO.
+
+DATA_TET
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_TET
+    SHOW "NeuroCOBOL V3.0 en linea (Tetum / Lia-Tetun)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

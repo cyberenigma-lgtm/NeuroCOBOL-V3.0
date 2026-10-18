@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Chinese / 中文 (zh)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+程序 COGNITIVE_DEMO.
+
+数据
+    定义 CUENTA 作为 压缩(10,2).
+
+逻辑
+    显示 "NeuroCOBOL V3.0 en linea (Chinese / 中文)"
+    计算 CUENTA = 1000 + 500 - 50
+    显示 CUENTA
+    
+    如果 CUENTA > 500 那么
+        显示 "Validacion de Orquestacion: APROBADA"
+    结束_如果
+
+结束

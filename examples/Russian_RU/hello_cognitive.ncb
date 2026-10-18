@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Russian / Русский (ru)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+ПРОГРАММА COGNITIVE_DEMO.
+
+ДАННЫЕ
+    ОПРЕДЕЛИТЬ CUENTA КАК СЖАТЫЙ(10,2).
+
+ЛОГИКА
+    ПОКАЗАТЬ "NeuroCOBOL V3.0 en linea (Russian / Русский)"
+    ВЫЧИСЛИТЬ CUENTA = 1000 + 500 - 50
+    ПОКАЗАТЬ CUENTA
+    
+    ЕСЛИ CUENTA > 500 ТО
+        ПОКАЗАТЬ "Validacion de Orquestacion: APROBADA"
+    КОНЕЦ_ЕСЛИ
+
+КОНЕЦ

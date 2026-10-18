@@ -15,7 +15,7 @@ Genesis OS mantiene un registro continuo de toda actividad del bus cognitivo.
 ## 🟩 2. Inspección del Binario GXP — La Voluntad en Silicio
 El formato **GXP (Genesis eXecutable Package)** encapsula el bytecode genesis, metadatos de autoría y la estructura de orquestación.
 
-*   **Cabecera GXP**: Incluye la firma de autoría de **José Manuel Moreno Cano**, versión del compilador, tabla de offsets y huella de integridad.
+*   **Cabecera GXP**: Incluye la firma de autoría de **cyberenigma-lgtm (Noxferion)**, versión del compilador, tabla de offsets y huella de integridad.
 *   **Sección Neural**: Contiene los opcodes de alto nivel:
     *   `0xD0` → UI (NXG V2)
     *   `0xE0` → I/O industrial
@@ -38,6 +38,6 @@ Si un programa no se comporta como se esperaba, siga este protocolo:
 ---
 
 ### 🧠 Depuración e Introspección
-*Por José Manuel Moreno Cano*
+*Por cyberenigma-lgtm (Noxferion)*
 
 Este módulo convierte al programador en un **Operador Cognitivo**, capaz de rastrear señales, validar la voluntad y comprender cómo **Genesis OS** interpreta cada intención.

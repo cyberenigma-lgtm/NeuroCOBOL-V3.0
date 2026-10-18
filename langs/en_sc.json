@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Scottish English / Scots",
+    "code": "en_sc",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Scottish English / Scots"
+  },
+  "keywords": {
+    "program": "PROGRAM_EN_SC",
+    "data": "DATA_EN_SC",
+    "logic": "LOGIC_EN_SC",
+    "end": "END",
+    "define": "DEFINE",
+    "as": "AS",
+    "show": "SHOW",
+    "compute": "COMPUTE",
+    "if": "IF",
+    "then": "THEN",
+    "else": "ELSE",
+    "end_if": "END_IF",
+    "perform": "PERFORM",
+    "module": "MODULE",
+    "bus": "BUS",
+    "send": "SEND",
+    "receive": "RECEIVE",
+    "nitro": "NITRO",
+    "compressed": "COMPRESSED",
+    "defense": "DEFENSE",
+    "integrity": "INTEGRITY",
+    "crypto": "CRYPTO",
+    "auth": "AUTH",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "NEURAL_INSPECT"
+  }
+}

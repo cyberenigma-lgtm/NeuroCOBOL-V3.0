@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Spanish (Argentina) / Español (Argentina)",
+    "code": "es_ar",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Spanish (Argentina) / Español (Argentina)"
+  },
+  "keywords": {
+    "program": "PROGRAM_ES_AR",
+    "data": "DATA_ES_AR",
+    "logic": "LOGIC_ES_AR",
+    "end": "END",
+    "define": "DEFINE",
+    "as": "AS",
+    "show": "SHOW",
+    "compute": "COMPUTE",
+    "if": "IF",
+    "then": "THEN",
+    "else": "ELSE",
+    "end_if": "END_IF",
+    "perform": "PERFORM",
+    "module": "MODULE",
+    "bus": "BUS",
+    "send": "SEND",
+    "receive": "RECEIVE",
+    "nitro": "NITRO",
+    "compressed": "COMPRESSED",
+    "defense": "DEFENSE",
+    "integrity": "INTEGRITY",
+    "crypto": "CRYPTO",
+    "auth": "AUTH",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "NEURAL_INSPECT"
+  }
+}

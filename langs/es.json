@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Spanish / Español",
+    "code": "es",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Spanish / Español"
+  },
+  "keywords": {
+    "program": "PROGRAMA",
+    "data": "DATOS",
+    "logic": "LOGICA",
+    "end": "FIN",
+    "define": "DEFINIR",
+    "as": "COMO",
+    "show": "MOSTRAR",
+    "compute": "CALCULAR",
+    "if": "SI",
+    "then": "ENTONCES",
+    "else": "SINO",
+    "end_if": "FIN_SI",
+    "perform": "EJECUTAR",
+    "module": "MODULO",
+    "bus": "BUS",
+    "send": "ENVIAR",
+    "receive": "RECIBIR",
+    "nitro": "NITRO",
+    "compressed": "COMPRIMIDO",
+    "defense": "DEFENSA",
+    "integrity": "INTEGRIDAD",
+    "crypto": "CRIPTOGRAFIA",
+    "auth": "AUTENTICACION",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "INSPECCION_NEURONAL"
+  }
+}

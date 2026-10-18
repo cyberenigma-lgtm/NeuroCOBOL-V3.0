@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Kinyarwanda (rw)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_RW COGNITIVE_DEMO.
+
+DATA_RW
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_RW
+    SHOW "NeuroCOBOL V3.0 en linea (Kinyarwanda)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

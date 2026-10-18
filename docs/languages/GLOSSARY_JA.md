@@ -1,10 +1,10 @@
 # 📖 マスター用語集: NeuroCOBOL V3.0（日本語）
 ### *Genesis OS インフラ言語および認知オーケストレーション実行ランタイム*
 
-> **著者**: José Manuel Moreno Cano (Noxferion) — AIシステムアーキテクト  
+> **著者**: cyberenigma-lgtm (Noxferion) (Noxferion) — AIシステムアーキテクト  
 > **Safe Creative 登録ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **スペイン国家知的財産登録番号**: `00765-02939466`  
-> **Ring 0 権限シール**: `0x4A4D4D43` (*JMMC*)
+> **Ring 0 権限シール**: `0x4359454E` (*CYEN*)
 
 ---
 

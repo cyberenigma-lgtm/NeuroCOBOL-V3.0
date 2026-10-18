@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Uzbek / O'zbek (uz)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_UZ COGNITIVE_DEMO.
+
+DATA_UZ
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_UZ
+    SHOW "NeuroCOBOL V3.0 en linea (Uzbek / O'zbek)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

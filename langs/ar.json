@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Arabic / العربية",
+    "code": "ar",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Arabic / العربية"
+  },
+  "keywords": {
+    "program": "برنامج",
+    "data": "بيانات",
+    "logic": "منطق",
+    "end": "نهاية",
+    "define": "تعريف",
+    "as": "مثل",
+    "show": "عرض",
+    "compute": "حساب",
+    "if": "اذا",
+    "then": "حينئذ",
+    "else": "والا",
+    "end_if": "نهاية_اذا",
+    "perform": "تنفيذ",
+    "module": "وحدة",
+    "bus": "ناقل",
+    "send": "ارسال",
+    "receive": "استلام",
+    "nitro": "نيترو",
+    "compressed": "مضغوط",
+    "defense": "دفاع",
+    "integrity": "سلامة",
+    "crypto": "تشفير",
+    "auth": "مصادقة",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "فحص_عصبي"
+  }
+}

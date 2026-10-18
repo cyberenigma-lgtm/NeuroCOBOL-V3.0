@@ -1,7 +1,7 @@
 # 📖 Glosario Maestro: NeuroCOBOL V3.0 (2026 Sovereign AI Release)
 ### *La Constitución del Lenguaje Genesis de Genesis OS & Motor Cognitivo*
 
-Este glosario define los términos, sintaxis, opcodes y la filosofía técnica de **NeuroCOBOL V3.0**, protegida por el registro oficial **[Safe Creative ID: `2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)**, el expediente del Registro de Propiedad Intelectual de España **`00765-02939466`** y el sello de autoridad criptográfica **`0x4A4D4D43`** (*JMMC*).
+Este glosario define los términos, sintaxis, opcodes y la filosofía técnica de **NeuroCOBOL V3.0**, protegida por el registro oficial **[Safe Creative ID: `2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)**, el expediente del Registro de Propiedad Intelectual de España **`00765-02939466`** y el sello de autoridad criptográfica **`0x4359454E`** (*CYEN*).
 
 ---
 
@@ -74,7 +74,7 @@ Este glosario define los términos, sintaxis, opcodes y la filosofía técnica d
 
 Toda compilación de NeuroCOBOL V3.0 genera en el encabezado `.gx` el identificador de autoridad de Anillo 0:
 
-$$\text{Header Seal} = \mathtt{0x4A4D4D43} \quad (\text{ASCII: } \textbf{JMMC})$$
+$$\text{Header Seal} = \mathtt{0x4359454E} \quad (\text{ASCII: } \textbf{CYEN})$$
 
 ---
-*Especificación y Glosario Actualizado V3.0 — José Manuel Moreno Cano (2026).*
+*Especificación y Glosario Actualizado V3.0 — cyberenigma-lgtm (Noxferion) (2026).*

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Chinese / 中文",
+    "code": "zh",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Chinese / 中文"
+  },
+  "keywords": {
+    "program": "程序",
+    "data": "数据",
+    "logic": "逻辑",
+    "end": "结束",
+    "define": "定义",
+    "as": "作为",
+    "show": "显示",
+    "compute": "计算",
+    "if": "如果",
+    "then": "那么",
+    "else": "否则",
+    "end_if": "结束_如果",
+    "perform": "执行",
+    "module": "模块",
+    "bus": "总线",
+    "send": "发送",
+    "receive": "接收",
+    "nitro": "氮气",
+    "compressed": "压缩",
+    "defense": "防御",
+    "integrity": "完整性",
+    "crypto": "加密",
+    "auth": "认证",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "神经检查"
+  }
+}

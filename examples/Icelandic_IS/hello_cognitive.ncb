@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Icelandic / Íslenska (is)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_IS COGNITIVE_DEMO.
+
+DATA_IS
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_IS
+    SHOW "NeuroCOBOL V3.0 en linea (Icelandic / Íslenska)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "Korean / 한국어",
+    "code": "ko",
+    "version": "3.0.0",
+    "upl_grade": "cognitive_enterprise",
+    "author": "cyberenigma-lgtm (Noxferion)",
+    "description": "NeuroCOBOL V3.0 Cognitive Grammar and Vocabulary for Korean / 한국어"
+  },
+  "keywords": {
+    "program": "프로그램",
+    "data": "데이터",
+    "logic": "로직",
+    "end": "끝",
+    "define": "정의",
+    "as": "로서",
+    "show": "표시",
+    "compute": "계산",
+    "if": "만약",
+    "then": "이면",
+    "else": "아니면",
+    "end_if": "끝_만약",
+    "perform": "실행",
+    "module": "모듈",
+    "bus": "버스",
+    "send": "전송",
+    "receive": "수신",
+    "nitro": "니트로",
+    "compressed": "압축",
+    "defense": "방어",
+    "integrity": "무결성",
+    "crypto": "암호",
+    "auth": "인증",
+    "simd_knn": "SIMD_KNN",
+    "neural_inspect": "신경망검사"
+  }
+}

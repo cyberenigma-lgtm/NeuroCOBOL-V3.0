@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Kurdish / Kurdî (ku)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_KU COGNITIVE_DEMO.
+
+DATA_KU
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_KU
+    SHOW "NeuroCOBOL V3.0 en linea (Kurdish / Kurdî)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

@@ -49,4 +49,4 @@ Este documento define la ruta de aprendizaje oficial para dominar **NeuroCOBOL**
 ---
 
 ### 🛡️ Certificación de Soberanía
-Al finalizar estos módulos, el arquitecto será capaz de orquestar **Genesis OS** con la autoridad de **José Manuel Moreno Cano**, garantizando la **Soberanía Computacional** total.
+Al finalizar estos módulos, el arquitecto será capaz de orquestar **Genesis OS** con la autoridad de **cyberenigma-lgtm (Noxferion)**, garantizando la **Soberanía Computacional** total.

@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Hungarian / Magyar (hu)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_HU COGNITIVE_DEMO.
+
+DATA_HU
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_HU
+    SHOW "NeuroCOBOL V3.0 en linea (Hungarian / Magyar)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

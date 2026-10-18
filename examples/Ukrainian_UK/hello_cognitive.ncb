@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Ukrainian / Українська (uk)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_UK COGNITIVE_DEMO.
+
+DATA_UK
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_UK
+    SHOW "NeuroCOBOL V3.0 en linea (Ukrainian / Українська)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

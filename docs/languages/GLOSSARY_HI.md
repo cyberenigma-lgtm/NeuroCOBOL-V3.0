@@ -1,10 +1,10 @@
 # 📖 मास्टर शब्दावली: NeuroCOBOL V3.0 (हिन्दी)
 ### *Genesis OS इंफ्रास्ट्रक्चर भाषा और संज्ञानात्मक ऑर्केस्ट्रेशन रनटाइम*
 
-> **लेखक**: José Manuel Moreno Cano (Noxferion) — AI सिस्टम आर्किटेक्ट  
+> **लेखक**: cyberenigma-lgtm (Noxferion) (Noxferion) — AI सिस्टम आर्किटेक्ट  
 > **Safe Creative पंजीकरण आईडी**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **स्पेन राष्ट्रीय बौद्धिक संपदा रजिस्टर**: `00765-02939466`  
-> **Ring 0 अथॉरिटी सील**: `0x4A4D4D43` (*JMMC*)
+> **Ring 0 अथॉरिटी सील**: `0x4359454E` (*CYEN*)
 
 ---
 

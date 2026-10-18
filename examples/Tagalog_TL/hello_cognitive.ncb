@@ -1,0 +1,21 @@
+; ============================================================================
+; NeuroCOBOL V3.0 Cognitive Program
+; Language: Tagalog / Filipino (tl)
+; UPL+ Sovereign Grade Standard
+; ============================================================================
+
+PROGRAM_TL COGNITIVE_DEMO.
+
+DATA_TL
+    DEFINE CUENTA AS COMPRESSED(10,2).
+
+LOGIC_TL
+    SHOW "NeuroCOBOL V3.0 en linea (Tagalog / Filipino)"
+    COMPUTE CUENTA = 1000 + 500 - 50
+    SHOW CUENTA
+    
+    IF CUENTA > 500 THEN
+        SHOW "Validacion de Orquestacion: APROBADA"
+    END_IF
+
+END

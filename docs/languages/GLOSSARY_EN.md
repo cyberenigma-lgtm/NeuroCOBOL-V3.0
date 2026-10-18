@@ -1,10 +1,10 @@
 # 📖 Master Glossary: NeuroCOBOL V3.0 (English)
 ### *The Infrastructure Language & Cognitive Orchestration Runtime for Genesis OS*
 
-> **Author**: José Manuel Moreno Cano (Noxferion) — AI Systems Architect  
+> **Author**: cyberenigma-lgtm (Noxferion) (Noxferion) — AI Systems Architect  
 > **Safe Creative Registration ID**: [`2609217054592`](https://www.safecreative.org/work/2609217054592-neurocobol-v3-0-lenguaje-de-orquestacion-cognitiva-compilador-y-runtime-soberano)  
 > **Spain Central IP Expediente**: `00765-02939466`  
-> **Ring 0 Authority Seal**: `0x4A4D4D43` (*JMMC*)
+> **Ring 0 Authority Seal**: `0x4359454E` (*CYEN*)
 
 ---
 

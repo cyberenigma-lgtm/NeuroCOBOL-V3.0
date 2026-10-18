@@ -25,7 +25,7 @@ A pesar de su potencia, estos lenguajes siempre estuvieron limitados por el **Ha
 ---
 
 ## 🟧 3. 2026: La Revolución NeuroCOBOL (Genesis OS)
-**NeuroCOBOL** no es una versión de COBOL; es una **Traslación de la Voluntad**. Creado desde cero por **José Manuel Moreno Cano**, este lenguaje rompe con las limitaciones del pasado:
+**NeuroCOBOL** no es una versión de COBOL; es una **Traslación de la Voluntad**. Creado desde cero por **cyberenigma-lgtm (Noxferion)**, este lenguaje rompe con las limitaciones del pasado:
 - **Sin Copias**: No se ha reutilizado código legacy de compiladores antiguos. Cada byte del motor **NWC** es una creación original nativa de Genesis OS.
 - **Integración Neuronal**: Por primera vez, el lenguaje puede "sentir" y "orquestar" los 35 módulos de IA del sistema a través del **NeuroBUS**.
 - **Bytecode Genesis**: Mientras que el COBOL clásico dependía de mainframes cerrados, NeuroCOBOL genera binarios **GXP** optimizados para el kernel de Genesis, con opcodes de interfaz (`0xD0`) y bus (`0xF0`) inexistentes en el pasado.
