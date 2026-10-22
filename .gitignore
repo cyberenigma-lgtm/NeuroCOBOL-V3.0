@@ -43,3 +43,8 @@ hemisphere_dump.json
 node_modules/
 dist/
 build/
+
+*.zip
+*.dll
+*.exe
+*.bin
